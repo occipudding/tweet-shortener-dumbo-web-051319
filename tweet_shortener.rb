@@ -1,3 +1,5 @@
+require 'pry'
+
 def dictionary
   {
     "hello": "hi",
@@ -24,3 +26,4 @@ def word_substituter(tweet)
   arr.join(" ")
 end
 
+word_substituter("Hey guys, can anyone teach me how 2 b cool? I really want 2 bthe best @ everything, u know what I mean? Tweeting is super fun u guys!!!!")
