@@ -20,7 +20,7 @@ def word_substituter(tweet)
   arr.each do |word|
     binding.pry
     if dictionary.keys.include?(word)
-      arr[arr.index(word)] = dictionary[word]
+      arr[arr.index(word)] = dictionary[word.to_sym]
     end
   end
   arr.join(" ")
