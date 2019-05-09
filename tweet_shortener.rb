@@ -17,7 +17,7 @@ def word_substituter(tweet)
   arr = tweet.split(" ")
   arr.each do |word|
     if dictionary.keys.include?(word)
-      arr[arr.index(word)] = dictionary[word]
+      arr[arr.index(word)].replace(dictionary[word])
     end
   end
   arr.join(" ")
