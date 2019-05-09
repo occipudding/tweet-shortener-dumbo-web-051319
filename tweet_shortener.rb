@@ -18,7 +18,6 @@ end
 def word_substituter(tweet)
   arr = tweet.split(" ")
   arr.each do |word|
-    binding.pry
     if dictionary.keys.include?(word)
       arr[arr.index(word)] = dictionary[word.to_sym]
     end
